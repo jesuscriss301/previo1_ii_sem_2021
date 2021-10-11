@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author COLOQUE ACÁ SUS NOMBRES COMPLETOS
+ * @author Jesus Manuel Cristancho Plata
  */
 public class Previo1 {
 
@@ -21,7 +21,15 @@ public class Previo1 {
     }
 
     private static long getNumeroFizzBuzzz(char[] vectorFizzBuzz) {
-
+        String n="";
+         if (vectorFizzBuzz == null) {throw new RuntimeException("Invalid data");}
+             for (int i = 0; i < vectorFizzBuzz.length ; i++) {
+                 int entero = Character.getNumericValue(vectorFizzBuzz[i]);
+                 if(entero== 3 ||entero==5)return -1;
+                 else n+=vectorFizzBuzz[i];
+             }
+                 
+             
         return 0;
     }
 
